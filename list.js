@@ -787,7 +787,7 @@ var grandmasterQuotes = [
 			["Hard on the outside, but with a soft delicious center."], //Clockwerk
 			["You only live ice!"], //Crystal Maiden
 			["You're no peer of the seer."], //Dark Seer
-			["Are you ready to have some fun?"], //Dark Willow
+			["Ugh, fine. I guess you're my little PogChamp. Come here."], //Dark Willow
 			["If killing you is wrong, I don't want to be right."], //Dazzle
 			["No no. Tsk tsk tsk."], //Death Prophet
 			["Feeling under the weather?"], //Disruptor
