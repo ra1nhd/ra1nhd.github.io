@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Hypatia Sans Pro;
+  src: url(./assets/fonts/Hypatia-Sans-Pro-Bold.ttf);
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myInput2 {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-family: Hypatia Sans Pro;
+  /*font-weight: bold;*/
+  font-size: 21px;
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 3px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+th,td{
+ border:1px solid #000; 
+}
+
+#name,
+#colon {
+    text-shadow: 2px 2px black, 1px 1px black, 2px 3px black;
+    vertical-align: bottom;
+	color: #faeac9;
+}
+
+#dotaplus {
+	width: 45px;
+	display: inline-block;
+	text-align: center;
+}
+
+#dotaplus img {
+	vertical-align: middle;
+	height: 36px;
+	margin-right: 4px;
+}
+
+#portrait img {
+	vertical-align: middle;
+	width: 67px;
+	height: 37px;
+	margin-right: 14px;
+	border: 1px solid black;
+}
+
+#speaker img {
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 20px;
+}
+
+#message {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    filter: drop-shadow(0px 1px black) drop-shadow(1px 1px black);
+    vertical-align: text-top;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.grandmaster {
+	background-image: -webkit-linear-gradient(#f3a8a8, #e01333);
+}
+
+.master {
+	background-image: -webkit-linear-gradient(#dbc6ff, #8326c5);
+}
+
+.platinum {
+	background-image: -webkit-linear-gradient(#dae7ff, #5d9eff);
+}
+
+.gold {
+	background-image: -webkit-linear-gradient(#fdfbd2, #e9e463);
+}
+
+.silver {
+	background-image: -webkit-linear-gradient(#dff1f4, #add7e0);
+}
+
+.bronze {
+	background-image: -webkit-linear-gradient(#fadd9a, #e2b276);
+}
+
+.default {
+	background-image: -webkit-linear-gradient(#faeac9, #faeac9);
+}
