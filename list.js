@@ -889,7 +889,6 @@ var grandmasterQuotes = [
 			];
 			
 var otherNames = [
-			["UNDEFINED"],
 			["sadness", "sadeness", "iadmit", "iadmitnothingbutmysadness"],
 			["bock", "bockbockbock"],
 			["waow", "wow"],
@@ -902,8 +901,7 @@ var otherNames = [
 			];
 			
 var otherQuotes = [
-			["UNDEFINED"], //UNDEFINED
-			["I admit nothing but my sadness that you\'re gone."], //Sadness
+			["I... I admit nothing but my sadness that you\'re gone."], //Sadness
 			["BOCK BOCK BOCK! That is what you sound like!"], //BOCK BOCK BOCK
 			["Waow!"], //Waow
 			["Это ГГ"], //GG
@@ -932,7 +930,7 @@ var otherQuotes = [
 			
 			
 			document.body.appendChild(table);
-			for(var i=1;i<otherNames.length;i++){
+			for(var i=0;i<otherNames.length;i++){
             tr = document.createElement('tr'),
             //for otherNames
             td= document.createElement('td');
