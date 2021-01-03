@@ -1,3 +1,7 @@
+body {
+	background-color: #6b7179;
+}
+
 @font-face {
   font-family: Hypatia Sans Pro;
   src: url(./assets/fonts/Hypatia-Sans-Pro-Bold.ttf);
@@ -12,6 +16,8 @@
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
+  color: white;
+  background: #303233;
 }
 
 #myInput2 {
@@ -46,7 +52,7 @@
 
 #myTable tr.header, #myTable tr:hover {
   /* Add a grey background color to the table header and on hover */
-  background-color: #f1f1f1;
+  background-color: #3c4346;
 }
 
 th,td{

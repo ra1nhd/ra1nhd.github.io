@@ -888,14 +888,40 @@ var grandmasterQuotes = [
 			["God's gift to the world: Me."] //Zeus
 			];
 			
-        var table= document.createElement('table'),
+var otherNames = [
+			["UNDEFINED"],
+			["sadness", "sadeness", "iadmit", "iadmitnothingbutmysadness"],
+			["bock", "bockbockbock"],
+			["waow", "wow"],
+			["gg", "Это ГГ"],
+			["nextlevel", "next", "nextlevelplay", "thenextlevelplay"],
+			["lakad", "lakadmatatag", "normalin", "normalinnormalin"],
+			["woo", "comingthrough"],
+			["holymoly", "holy"],
+			["questionable"]
+			];
+			
+var otherQuotes = [
+			["UNDEFINED"], //UNDEFINED
+			["I admit nothing but my sadness that you\'re gone."], //Sadness
+			["BOCK BOCK BOCK! That is what you sound like!"], //BOCK BOCK BOCK
+			["Waow!"], //Waow
+			["Это ГГ"], //GG
+			["The next level play!"], //Next Level
+			["Lakad Matataaag! Normalin, Normalin."], //Lakad Matatag
+			["Coming through with the wooooo"], //Coming Through
+			["Holy Moly!"], //Holy Moly
+			["I... uh... That was questionable at the... at the best."] //Questionable
+			];
+			
+        var table = document.createElement('table'),
             thead = document.createElement('thead'),
             tbody = document.createElement('tbody'),
             th,
             tr,
             td;
             th = document.createElement('th'),          
-            th.innerHTML="heroNames";
+            th.innerHTML="Hero Names";
 			table.setAttribute("id", "myTable");
             table.appendChild(th);
             th = document.createElement('th'); 
@@ -903,54 +929,71 @@ var grandmasterQuotes = [
             table.appendChild(th);
             table.appendChild(thead);            
             table.appendChild(tbody);
+			
+			
+			document.body.appendChild(table);
+			for(var i=1;i<otherNames.length;i++){
+            tr = document.createElement('tr'),
+            //for otherNames
+            td= document.createElement('td');
+            td.innerHTML=otherNames[i];
+			td.setAttribute("rowspan", "1");
+            tr.appendChild(td);
+
+            //for otherQuotes
+            td = document.createElement('td');
+            td.innerHTML='<span id="speaker"><audio id="' + otherNames[i][0] + '_default" preload="none"><source src="./assets/audio/other/' + otherNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + otherNames[i][0] + '_default.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="default">' + otherQuotes[i]; + '</span>';
+            tr.appendChild(td);
+            tbody.appendChild(tr);
+			}
             
             document.body.appendChild(table);
-         for(var i=1;i<heroNames.length;i++){
+			for(var i=1;i<heroNames.length;i++){
             tr = document.createElement('tr'),
-            //for heronames
+            //for heroNames
             td= document.createElement('td');
             td.innerHTML=heroNames[i];
 			td.setAttribute("rowspan", "6");
             tr.appendChild(td);
 
-            //for masterquotes
+            //for masterQuotes
             td = document.createElement('td');
-            td.innerHTML='<span id="dotaplus"><img id ="tier" src="./assets/images/hero_badges/master.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_master" preload="none"><source src="./assets/audio/master/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_master.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="master">' + masterQuotes[i]; + '</span>';
+            td.innerHTML='<span id="dotaplus"><img id ="tier" title="Master" src="./assets/images/hero_badges/master.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_master" preload="none"><source src="./assets/audio/master/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_master.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="master">' + masterQuotes[i]; + '</span>';
             tr.appendChild(td);
             tbody.appendChild(tr);
 			
-			//grandquotes
+			//grandmasterQuotes
 			tr = document.createElement('tr'),
             td = document.createElement('td');
-            td.innerHTML='<span id="dotaplus"><img id ="tier" src="./assets/images/hero_badges/grandmaster.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_grandmaster" preload="none"><source src="./assets/audio/grandmaster/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_grandmaster.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="grandmaster">' + grandmasterQuotes[i]; + '</span>';
+            td.innerHTML='<span id="dotaplus"><img id ="tier" title="Grandmaster"  src="./assets/images/hero_badges/grandmaster.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_grandmaster" preload="none"><source src="./assets/audio/grandmaster/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_grandmaster.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="grandmaster">' + grandmasterQuotes[i]; + '</span>';
             tr.appendChild(td);
             tbody.appendChild(tr);
 			
-			//platquotes
+			//platinumQuotes
 			tr = document.createElement('tr'),
             td = document.createElement('td');
-            td.innerHTML='<span id="dotaplus"><img id ="tier" src="./assets/images/hero_badges/platinum.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_platinum" preload="none"><source src="./assets/audio/platinum/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_platinum.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="platinum">' + platinumQuotes[i]; + '</span>';
+            td.innerHTML='<span id="dotaplus"><img id ="tier" title="Platinum" src="./assets/images/hero_badges/platinum.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_platinum" preload="none"><source src="./assets/audio/platinum/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_platinum.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="platinum">' + platinumQuotes[i]; + '</span>';
             tr.appendChild(td);
             tbody.appendChild(tr);
 			
-			//goldquotes
+			//goldQuotes
 			tr = document.createElement('tr'),
             td = document.createElement('td');
-            td.innerHTML='<span id="dotaplus"><img id ="tier" src="./assets/images/hero_badges/gold.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_gold" preload="none"><source src="./assets/audio/gold/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_gold.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="gold">' + goldQuotes[i]; + '</span>';
+            td.innerHTML='<span id="dotaplus"><img id ="tier" title="Gold"  src="./assets/images/hero_badges/gold.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_gold" preload="none"><source src="./assets/audio/gold/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_gold.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="gold">' + goldQuotes[i]; + '</span>';
             tr.appendChild(td);
             tbody.appendChild(tr);
 			
-			//silverquotes
+			//silverQuotes
 			tr = document.createElement('tr'),
             td = document.createElement('td');
-            td.innerHTML='<span id="dotaplus"><img id ="tier" src="./assets/images/hero_badges/silver.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_silver" preload="none"><source src="./assets/audio/silver/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_silver.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="silver">' + silverQuotes[i]; + '</span>';
+            td.innerHTML='<span id="dotaplus"><img id ="tier" title="Silver" src="./assets/images/hero_badges/silver.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_silver" preload="none"><source src="./assets/audio/silver/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_silver.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="silver">' + silverQuotes[i]; + '</span>';
             tr.appendChild(td);
             tbody.appendChild(tr);
 			
-			//bronzequotes
+			//bronzeQuotes
 			tr = document.createElement('tr'),
             td = document.createElement('td');
-            td.innerHTML='<span id="dotaplus"><img id ="tier" src="./assets/images/hero_badges/bronze.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_bronze" preload="none"><source src="./assets/audio/bronze/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_bronze.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="bronze">' + bronzeQuotes[i]; + '</span>';
+            td.innerHTML='<span id="dotaplus"><img id ="tier" title="Bronze" src="./assets/images/hero_badges/bronze.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_bronze" preload="none"><source src="./assets/audio/bronze/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_bronze.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="bronze">' + bronzeQuotes[i]; + '</span>';
             tr.appendChild(td);
             tbody.appendChild(tr);
          }
