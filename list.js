@@ -634,7 +634,7 @@ var silverQuotes = [
 			["Could be worse. Oh, wait, no it couldn't."], //Windranger
 			["Chill, baby."], //Winter Wyvern
 			["Wait for it... wait for it..."], //Witch Doctor
-			["SO WHAT IF I SWAGGER?"], //Wraith King
+			["TAKE A KNEE, PEASANT."], //Wraith King
 			["Wait for it!"] //Zeus
 			];
 
