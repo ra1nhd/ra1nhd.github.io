@@ -89,7 +89,7 @@ var heroNames = [
 			["pangolier", "pango"],
 			["phantom_assassin", "phantomassassin", "pa", "mortred"],
 			["phantom_lancer", "phantomlancer", "pl", "azwraith"],
-			["phoenix", "bird", "birb"],
+			["phoenix", "phx", "bird", "birb"],
 			["puck", "faeriedragon"],
 			["pudge", "pudka", "butcher"],
 			["pugna", "pug"],
@@ -897,7 +897,8 @@ var otherNames = [
 			["lakad", "lakadmatatag", "normalin", "normalinnormalin"],
 			["woo", "comingthrough"],
 			["holymoly", "holy"],
-			["questionable"]
+			["questionable"],
+			["baby", "candy", "candyfromababy"]
 			];
 			
 var otherQuotes = [
@@ -909,7 +910,8 @@ var otherQuotes = [
 			["Lakad Matataaag! Normalin, Normalin."], //Lakad Matatag
 			["Coming through with the wooooo"], //Coming Through
 			["Holy Moly!"], //Holy Moly
-			["I... uh... That was questionable at the... at the best."] //Questionable
+			["I... uh... That was questionable at the... at the best."], //Questionable
+			["Like stealing candy from a baby... A no longer living baby."] //Candy
 			];
 			
         var table = document.createElement('table'),
