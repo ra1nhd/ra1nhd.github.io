@@ -122,7 +122,7 @@ var heroNames = [
 			["troll_warlord", "trollwarlord", "troll"],
 			["tusk", "tuskarr", "tuskar", "walrus"],
 			["underlord", "pitlord", "abyssalunderlord"],
-			["undying", "undy", "dirge"],
+			["undying", "undy", "dirge", "ud"],
 			["ursa", "fuzzywuzzy"],
 			["vengefulspirit", "venge", "vs"],
 			["venomancer", "veno", "lesale"],
