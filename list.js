@@ -580,7 +580,7 @@ var silverQuotes = [
 			["You're in deep now."], //Naga Siren
 			["Feed the trees."], //Nature's Prophet
 			["That was costly."], //Necrophos
-			["Just what I needed!"], //Night Stalker
+			["Your nightmare continues."], //Night Stalker
 			["Talentless."], //Nyx Assassin
 			["Ye gods, how'd that happen? What the. Who'd the. How'd that happen?"], //Ogre Magi
 			["Nailed it."], //Omniknight
@@ -590,7 +590,7 @@ var silverQuotes = [
 			["All according to plan."], //Phantom Assassin
 			["Such simple minds."], //Phantom Lancer
 			["Denying Squawk"], //Phoenix
-			["Greetings!"], //Puck
+			["You might wish to retract your last move."], //Puck
 			["Oops. Was that me?"], //Pudge
 			["You're only making it worse."], //Pugna
 			["That was perfect."], //Queen of Pain
@@ -722,7 +722,7 @@ var bronzeQuotes = [
 			["I sense a connection between us!"], //Razor
 			["Contract complete."], //Riki
 			["Excellent idea!"], //Rubick
-			["Ha ha ha ha ha ha ha!"], //Sand King
+			["You have done a great service."], //Sand King
 			["And they thought it could get no darker."], //Shadow Demon
 			["Well bless your soul."], //Shadow Fiend
 			["My prayers are answered."], //Shadow Shaman
@@ -754,7 +754,7 @@ var bronzeQuotes = [
 			["Air support arrives."], //Viper
 			["Ah ha ha ha ha ha ha ha ha!"], //Visage
 			["This pleases me to no end."], //Void Spirit
-			["Ho ha ha ha ha ha ha ha ha!"], //Warlock
+			["Curse that blade!"], //Warlock
 			["The pattern is complete."], //Weaver
 			["Easy breezy."], //Windranger
 			["Ah ha ha ha ha ha ha ha ha ha ha!"], //Winter Wyvern
