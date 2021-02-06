@@ -887,6 +887,131 @@ var grandmasterQuotes = [
 		["GUYS? GUYS?!"], //Wraith King
 		["God's gift to the world: Me."] //Zeus
 		];
+		
+var bonusQuotes = [
+		["You didn't type a hero in correctly..."], //UNDEFINED
+		["Come at me."], //Abaddon
+		["That's comedy gold!"], //Alc
+		["Not til you're older."], //AA
+		["Thou art a poor speller."], //AM
+		["This doesn't make any sense."], //AM Persona
+		["You fools were easily fooled."], //Arc
+		["Too much talking, not enough fighting."], //Axe
+		["Blink dagger- AAAAAAAHHAAAH!"], //Bane
+		["Look out below!"], //Batrider
+		["Calm your beard."], //Beastmaster
+		["Why are you not running?"], //Bloodseeker
+		["Long time no see."], //Bounty Hunter
+		["*crit sound*"], //Brewmaster
+		["Oy, shut your chimey talking mouth."], //Bristleback
+		["Sticky bola!"], //Broodmother
+		["Where is your healing now?"], //Centaur
+		["What pitiful contraption was that?"], //Chaos Knight
+		["Back to hell, you succubus."], //Chen
+		["Join me, my bony brethren."], //Clinkz
+		["That didn't go as I planned."], //Clockwerk
+		["Remember, help control the creep population. Farm efficiently, and have your creep slain or dominated!"], //Crystal Maiden
+		["No, I will not calm my beard."], //Dark Seer
+		["We're gonna have some fuuuuunnnn."], //Dark Willow
+		["You're in the pink!"], //Dazzle
+		["Welcome, all my ladies, welcome! Come to me!"], //Death Prophet
+		["Wait, what? I'm dead?"], //Disruptor
+		["Storm Spirit, shut up."], //Doom
+		["Welcome to the dead of night."], //Dragon Knight
+		["I found a secret."], //Drow Ranger
+		["Such a disappointment."], //Earth Spirit
+		["Chaos Dunk!"], //Earthshaker
+		["I have reduced you to pulp."], //Elder Titan
+		["Well, that was toasty!"], //Ember Spirit
+		["Party at my place!"], //Enchantress
+		["If there is a future, this will be useful."], //Enigma
+		["Forgive me my friends!"], //Faceless Void
+		["How did one as dim as you even survive childhood?"], //Grimstroke
+		["Holy shit, it's Viper!"], //Gyrocopter
+		["Everybody's laughing, everybody's happy."], //Hoodwink
+		["Blink and I'll cut you."], //Huskar
+		["Behold the meatball!"], //Invoker
+		["Aegisy Beeps"], //Io
+		["This changes everything."], //Jakiro
+		["I'm the Juggernaut, bitch!"], //Juggernaut
+		["Run! Run, I say!"], //Keeper of the Light
+		["Booty!"], //Kunkka
+		["You came to a battle wearing that?!"], //Legion Commander
+		["I have been waiting for this."], //Leshrac
+		["Freeze or the Ancient gets it!"], //Lich
+		["Oh Master, behold all these lives for the taking!"], //Lifestealer
+		["Aw, I thought we were steam friends."], //Lina
+		["Hells, yes!"], //Lion
+		["No... my friend is dying."], //Lone Druid
+		["Pathetic."], //Luna
+		["Run with me brother."], //Lycan
+		["Where are you going?"], //Magnus
+		["FIIIGHT MEEE!"], //Mars
+		["How does failure taste?"], //Medusa
+		["Oh now that's what I'm talking about!"], //Meepo
+		["Out of my way!"], //Mirana
+		["Here, piggy, piggy!"], //Monkey King
+		["Tsunami!"], //Morphling
+		["There's not enough alcohol in the world."], //Naga Siren
+		["Leaving so soon?"], //Nature's Prophet
+		["Ah, sadistic."], //Necrophos
+		["I said not yet!"], //Night Stalker
+		["Broodmotherfuh..."], //Nyx Assassin
+		["We didn't need--- Shut up and say thank you."], //Ogre Magi
+		["I am mortified."], //Omniknight
+		["I am shocked. Shocked!"], //Oracle
+		["Hard carry? I hardly cared."], //Outworld Devourer
+		["No need to worry. It's just the end of the world."], //Pangolier
+		["I don't believe this!"], //Phantom Assassin
+		["This was all of our fault!"], //Phantom Lancer
+		["Laughing Squawk"], //Phoenix
+		["Your comments cut me to the quick."], //Puck
+		["First Blood! Have I got juice on me chins?"], //Pudge
+		["I'll bet you feel like a fool."], //Pugna
+		["It feels so good to be bad."], //Queen of Pain
+		["This will come as a shock!"], //Razor
+		["It says right in my contract, no refunds."], //Riki
+		["Ha! That was terrible."], //Rubick
+		["What? You don't enjoy my dry wit?"], //Sand King
+		["I can wait a bit longer."], //Shadow Demon
+		["I guess gingers do have souls. Mm, delicious."], //Shadow Fiend
+		["Care for some company?"], //Shadow Shaman
+		["Ha! How about a little brain damage?"], //Silencer
+		["You've thought this through?"], //Skywrath Mage
+		["This would seem redundant."], //Slardar
+		["You call that sneaky?"], //Slark
+		["I heard you're one of the weirdos who gets off on this. Well, enjoy!"], //Snapfire
+		["Professionals have standards."], //Sniper
+		["What did I do wrong?"], //Spectre
+		["All bullshit aside, this one's in the bag."], //Spirit Breaker
+		["I only want blue tangos in my dressing room!"], //Storm Spirit
+		["Go sproink yourself!"], //Sven
+		["Hoh! I'm brilliant. You are?"], //Techies
+		["You can't touch me."], //Templar Assassin
+		["What the hell is wrong with you anyway?"], //Terrorblade
+		["That was good of you."], //Tidehunter
+		["I don't need therapy!"], //Timbersaw
+		["Well. I think it's rather stimulating, don't you?"], //Tinker
+		["I am Tiny."], //Tiny
+		["Trees are not so good with motion, you know"], //Treant Protector
+		["We only lost because my whole team are noobs!"], //Troll Warlord
+		["Well there's your problem."], //Tusk
+		["You have my permission to die."], //Underlord
+		["Really cool magnets!"], //Undying
+		["Your cubs are orphaned now."], //Ursa
+		["It feels good to get that off my chest."], //Vengeful Spirit
+		["The pain. The pain!"], //Venomancer
+		["Holy shit, it's me."], //Viper
+		["Herp derp Dirge."], //Visage
+		["It seems you don't understand."], //Void Spirit
+		["Just for that, I'm unfiending you."], //Warlock
+		["Tichedricheaph."], //Weaver
+		["Where the heck did that come from?"], //Windranger
+		["I'm melting!"], //Winter Wyvern
+		["Roll out the barrel!"], //Witch Doctor
+		["DEATH IS MY BITCH."], //Wraith King
+		["You can't run from heaven!"] //Zeus
+		];
 			
 var otherNames = [
 		["sadness", "sadeness", "iadmit", "iadmitnothingbutmysadness"],
@@ -953,7 +1078,7 @@ var table = document.createElement('table'),
 	//for heroNames
 	td= document.createElement('td');
 	td.innerHTML=heroNames[i];
-	td.setAttribute("rowspan", "6");
+	td.setAttribute("rowspan", "7");
 	tr.appendChild(td);
 
 	//grandmasterQuotes
@@ -962,7 +1087,7 @@ var table = document.createElement('table'),
 	tr.appendChild(td);
 	tbody.appendChild(tr);
 
-	//for masterQuotes
+	//masterQuotes
 	tr = document.createElement('tr'),
 	td = document.createElement('td');
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Master" src="./assets/images/hero_badges/master.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_master" preload="none"><source src="./assets/audio/master/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_master.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="master">' + masterQuotes[i]; + '</span>';
@@ -994,6 +1119,13 @@ var table = document.createElement('table'),
 	tr = document.createElement('tr'),
 	td = document.createElement('td');
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Bronze" src="./assets/images/hero_badges/bronze.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_bronze" preload="none"><source src="./assets/audio/bronze/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_bronze.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="bronze">' + bronzeQuotes[i]; + '</span>';
+	tr.appendChild(td);
+	tbody.appendChild(tr);
+	
+	//bonusQuotes
+	tr = document.createElement('tr'),
+	td = document.createElement('td');
+	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Bonus" src="./assets/images/hero_badges/bonus.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_bonus" preload="none"><source src="./assets/audio/bonus/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_bonus.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="bonus">' + bonusQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
  }

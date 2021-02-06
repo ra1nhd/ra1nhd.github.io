@@ -128,6 +128,10 @@ a:link {
 	background-image: -webkit-linear-gradient(#fadd9a, #e2b276);
 }
 
+.bonus {
+	background-image: -webkit-linear-gradient(#e3ffde, #0cda1c);
+}
+
 .default {
 	background-image: -webkit-linear-gradient(#faeac9, #faeac9);
 }
