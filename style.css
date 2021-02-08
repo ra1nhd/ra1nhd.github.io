@@ -1,5 +1,7 @@
 body {
 	background-color: #6b7179;
+	font-family: Hypatia Sans Pro;
+	font-size: 21px;
 }
 
 @font-face {
@@ -8,7 +10,6 @@ body {
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 50%; /* Full-width */
@@ -21,7 +22,6 @@ body {
 }
 
 #myInput2 {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 50%; /* Full-width */
@@ -31,32 +31,100 @@ body {
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myTable {
+#otherquotes {
   border-collapse: collapse; /* Collapse borders */
   width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
-  font-family: Hypatia Sans Pro;
-  /*font-weight: bold;*/
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+#heroquotes {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
   font-size: 21px;
 }
 
-#myTable th, #myTable td {
-  text-align: left; /* Left-align text */
-  padding: 3px; /* Add padding */
-}
-
-#myTable tr {
+tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+th {
   /* Add a grey background color to the table header and on hover */
-  background-color: #3c4346;
+  background-color: #8b929c;
+  line-height: 30px;
 }
 
 th,td{
  border:1px solid #000; 
+ text-align: left; /* Left-align text */
+  padding: 3px; /* Add padding */
+  word-break: break-word;
+}
+
+td:first-child{
+	width: 25%;
+}
+
+td:nth-child(2){
+	width: 25%;
+}
+
+td:nth-child(3){
+	width: 50%;
+}
+
+#heroquotes td:nth-child(2){
+	min-width: 88px;
+}
+
+#otherquotes td:nth-child(2):hover{
+	background-color: #3c4346;
+}
+
+#heroquotes tr:hover td:not(:first-child){
+	background-color: #3c4346;
+}
+
+.cp_btn {
+	float:right;
+	box-shadow: inset 0px 1px 0px 0px #636363;
+	background: linear-gradient(to bottom, #3e3e3e 5%, #303233 100%);
+	background-color: #303233;
+	border-radius:6px;
+	border:1px solid #382a2a;
+	display:inline-block;
+	cursor:pointer;
+	color:#bdbdbd;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #696767;
+}
+.cp_btn:hover {
+	background:linear-gradient(to bottom, #303233 5%, #3e3e3e 100%);
+	background-color:#303233;
+}
+.cp_btn:active {
+	position:relative;
+	top:1px;
+}
+
+.copy-field{
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    filter: drop-shadow(0px 1px black) drop-shadow(1px 1px black);
+    vertical-align: text-top;
+	background-image: -webkit-linear-gradient(#faeac9, #faeac9);
+}
+
+.herolist__hero__link{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
 #name,

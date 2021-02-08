@@ -15,7 +15,7 @@ var hexColor = colorArray[Math.floor(Math.random() * colorArray.length)];
 
 var heroNames = [
 		["UNDEFINED"],
-		["abaddon", "abba", "abbadon"],
+		["abaddon", "abbadon", "aba", "abba"],
 		["alchemist", "alc", "razzil", "alch"],
 		["ancient_apparition", "ancientapparition", "ancientapprition", "aa", "kaldr"],
 		["antimage", "am", "magina"],
@@ -36,7 +36,7 @@ var heroNames = [
 		["clinkz", "bone", "bonefletcher", "brooklynkurtz"],
 		["clockwerk", "rattletrap", "clock", "cw"],
 		["crystal_maiden", "crystalmaiden", "cm", "maiden", "rylai"],
-		["dark_seer", "darkseer", "ds"],
+		["dark_seer", "darkseer", "seer", "ds"],
 		["dark_willow", "darkwillow", "willow", "dw", "mireska", "biggestoversight"],
 		["dazzle", "dazz", "shadowpriest"],
 		["death_prophet", "deathprophet", "dp", "krobe", "krobelus"],
@@ -1038,32 +1038,41 @@ var otherQuotes = [
 		["I... uh... That was questionable at the... at the best."], //Questionable
 		["Like stealing candy from a baby... A no longer living baby."] //Candy
 		];
-			
+
 var table = document.createElement('table'),
 	thead = document.createElement('thead'),
 	tbody = document.createElement('tbody'),
 	th,
 	tr,
 	td;
-	th = document.createElement('th'),          
-	th.innerHTML="Hero Names";
-	table.setAttribute("id", "myTable");
+	th = document.createElement('th'),
+	th.innerHTML="Alternate Keywords";
+	table.setAttribute("id", "otherquotes");
 	table.appendChild(th);
-	th = document.createElement('th'); 
+	th = document.createElement('th');
+	th.innerHTML= "Keywords"
+	table.appendChild(th);
+	th = document.createElement('th');
 	th.innerHTML= "Quotes"
 	table.appendChild(th);
-	table.appendChild(thead);            
+	table.appendChild(thead);
 	table.appendChild(tbody);
-	
-	
+
 	document.body.appendChild(table);
+	
 	for(var i=0;i<otherNames.length;i++){
-	tr = document.createElement('tr'),
 	//for otherNames
-	td= document.createElement('td');
-	td.innerHTML=otherNames[i];
+	tr = document.createElement('tr'),
+	td = document.createElement('td');
+	var cleanNames = otherNames[i].join(),
+	cleanNames = cleanNames.replace(/,/g, ", ");
+	td.innerHTML = cleanNames;
 	td.setAttribute("rowspan", "1");
 	tr.appendChild(td);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span id="` + otherNames[i][0] + `_text" class="copy-field">` + otherNames[i][0].replace(/_/g, " ") + `</span><button class="cp_btn" onclick="copyToClipboard('` + otherNames[i][0] + `_text')">Copy</button>`;
+	tr.appendChild(copycell);
 
 	//for otherQuotes
 	td = document.createElement('td');
@@ -1072,16 +1081,46 @@ var table = document.createElement('table'),
 	tbody.appendChild(tr);
 	}
 	
+	table = document.createElement('table'),
+	thead = document.createElement('thead'),
+	tbody = document.createElement('tbody'),
+	th,
+	tr,
+	td;
+	th = document.createElement('th'),
+	th.innerHTML="Alternate Hero Names";
+	table.setAttribute("id", "heroquotes");
+	table.appendChild(th);
+	th = document.createElement('th');
+	th.innerHTML= "Keywords"
+	table.appendChild(th);
+	th = document.createElement('th');
+	th.innerHTML= "Quotes"
+	table.appendChild(th);
+	table.appendChild(thead);
+	
 	document.body.appendChild(table);
+	
 	for(var i=1;i<heroNames.length;i++){
-	tr = document.createElement('tr'),
+	tbody = document.createElement('tbody');
+	table.appendChild(tbody);
+	tbody.setAttribute("id", heroNames[i][0]);
+
 	//for heroNames
-	td= document.createElement('td');
-	td.innerHTML=heroNames[i];
+	tr = document.createElement('tr'),
+	td = document.createElement('td');
+	var cleanNames = heroNames[i].join(),
+	cleanNames = cleanNames.replace(/_/g, " "),
+	cleanNames = cleanNames.replace(/,/g, ", ");
+	td.innerHTML = cleanNames;
 	td.setAttribute("rowspan", "7");
 	tr.appendChild(td);
 
 	//grandmasterQuotes
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_gmtext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` gm</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_gmtext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td = document.createElement('td');
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Grandmaster"  src="./assets/images/hero_badges/grandmaster.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_grandmaster" preload="none"><source src="./assets/audio/grandmaster/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_grandmaster.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="grandmaster">' + grandmasterQuotes[i]; + '</span>';
 	tr.appendChild(td);
@@ -1089,42 +1128,90 @@ var table = document.createElement('table'),
 
 	//masterQuotes
 	tr = document.createElement('tr'),
-	td = document.createElement('td');
+	td = document.createElement('td'),
+	blanktd = document.createElement('td'),
+	blanktd.style.display = "none",
+	tr.appendChild(blanktd);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_mastertext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` master</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_mastertext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Master" src="./assets/images/hero_badges/master.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_master" preload="none"><source src="./assets/audio/master/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_master.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="master">' + masterQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
 	
 	//platinumQuotes
 	tr = document.createElement('tr'),
-	td = document.createElement('td');
+	td = document.createElement('td'),
+	blanktd = document.createElement('td'),
+	blanktd.style.display = "none",
+	tr.appendChild(blanktd);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_platinumtext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` plat</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_platinumtext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Platinum" src="./assets/images/hero_badges/platinum.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_platinum" preload="none"><source src="./assets/audio/platinum/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_platinum.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="platinum">' + platinumQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
 	
 	//goldQuotes
 	tr = document.createElement('tr'),
-	td = document.createElement('td');
+	td = document.createElement('td'),
+	blanktd = document.createElement('td'),
+	blanktd.style.display = "none",
+	tr.appendChild(blanktd);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_goldtext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` gold</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_goldtext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Gold"  src="./assets/images/hero_badges/gold.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_gold" preload="none"><source src="./assets/audio/gold/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_gold.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="gold">' + goldQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
 	
 	//silverQuotes
 	tr = document.createElement('tr'),
-	td = document.createElement('td');
+	td = document.createElement('td'),
+	blanktd = document.createElement('td'),
+	blanktd.style.display = "none",
+	tr.appendChild(blanktd);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_silvertext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` silver</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_silvertext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Silver" src="./assets/images/hero_badges/silver.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_silver" preload="none"><source src="./assets/audio/silver/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_silver.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="silver">' + silverQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
 	
 	//bronzeQuotes
 	tr = document.createElement('tr'),
-	td = document.createElement('td');
+	td = document.createElement('td'),
+	blanktd = document.createElement('td'),
+	blanktd.style.display = "none",
+	tr.appendChild(blanktd);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_bronzetext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` bronze</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_bronzetext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Bronze" src="./assets/images/hero_badges/bronze.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_bronze" preload="none"><source src="./assets/audio/bronze/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_bronze.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="bronze">' + bronzeQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
 	
 	//bonusQuotes
 	tr = document.createElement('tr'),
-	td = document.createElement('td');
+	td = document.createElement('td'),
+	blanktd = document.createElement('td'),
+	blanktd.style.display = "none",
+	tr.appendChild(blanktd);
+	
+	copycell = document.createElement('td'),
+	copycell.innerHTML = `<span class="herolist__hero ` + heroNames[i][0] + `"><a class="herolist__hero__link"><span class="herolist__hero__name"></span></a></span><span id="` + heroNames[i][0] + `_bonustext" class="copy-field">` + heroNames[i][0].replace(/_/g, " ") + ` bonus</span><button class="cp_btn" onclick="copyToClipboard('` + heroNames[i][0] + `_bonustext')">Copy</button>`;
+	tr.appendChild(copycell);
+	
 	td.innerHTML='<span id="dotaplus"><img id ="tier" title="Bonus" src="./assets/images/hero_badges/bonus.png"></span><span id="speaker"><audio id="' + heroNames[i][0] + '_bonus" preload="none"><source src="./assets/audio/bonus/' + heroNames[i][0] + '.mp3" type="audio/mpeg"></audio><a href="#" title="Play Audio" id="play" onclick="' + heroNames[i][0] + '_bonus.play();return false;"><img src="./assets/images/audio.png"></a></span><span id="message" class="bonus">' + bonusQuotes[i]; + '</span>';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
