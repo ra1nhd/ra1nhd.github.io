@@ -910,7 +910,7 @@ var bonusQuotes = [
 		["Back to hell, you succubus."], //Chen
 		["Join me, my bony brethren."], //Clinkz
 		["That didn't go as I planned."], //Clockwerk
-		["Remember, help control the creep population. Farm efficiently, and have your creep slain or dominated!"], //Crystal Maiden
+		["All the wards in the world didn't see that coming!"], //Crystal Maiden
 		["No, I will not calm my beard."], //Dark Seer
 		["We're gonna have some fuuuuunnnn."], //Dark Willow
 		["You're in the pink!"], //Dazzle
@@ -940,8 +940,8 @@ var bonusQuotes = [
 		["I have been waiting for this."], //Leshrac
 		["Freeze or the Ancient gets it!"], //Lich
 		["Oh Master, behold all these lives for the taking!"], //Lifestealer
-		["Aw, I thought we were steam friends."], //Lina
-		["Hells, yes!"], //Lion
+		['You gotta ask yourself, "Do I feel lucky?" Well, do you?'], //Lina
+		["I'll put the squeeze on you!"], //Lion
 		["No... my friend is dying."], //Lone Druid
 		["Pathetic."], //Luna
 		["Run with me brother."], //Lycan
@@ -950,7 +950,7 @@ var bonusQuotes = [
 		["How does failure taste?"], //Medusa
 		["Oh now that's what I'm talking about!"], //Meepo
 		["Out of my way!"], //Mirana
-		["Here, piggy, piggy!"], //Monkey King
+		["You're creeping me out."], //Monkey King
 		["Tsunami!"], //Morphling
 		["There's not enough alcohol in the world."], //Naga Siren
 		["Leaving so soon?"], //Nature's Prophet
@@ -961,7 +961,7 @@ var bonusQuotes = [
 		["I am mortified."], //Omniknight
 		["I am shocked. Shocked!"], //Oracle
 		["Hard carry? I hardly cared."], //Outworld Devourer
-		["No need to worry. It's just the end of the world."], //Pangolier
+		["Where is the fun if there's no chance of death?"], //Pangolier
 		["I don't believe this!"], //Phantom Assassin
 		["This was all of our fault!"], //Phantom Lancer
 		["Laughing Squawk"], //Phoenix
@@ -986,7 +986,7 @@ var bonusQuotes = [
 		["All bullshit aside, this one's in the bag."], //Spirit Breaker
 		["I only want blue tangos in my dressing room!"], //Storm Spirit
 		["Go sproink yourself!"], //Sven
-		["Hoh! I'm brilliant. You are?"], //Techies
+		["Hmm, yeah not sure how this works."], //Techies
 		["You can't touch me."], //Templar Assassin
 		["What the hell is wrong with you anyway?"], //Terrorblade
 		["That was good of you."], //Tidehunter
@@ -1002,7 +1002,7 @@ var bonusQuotes = [
 		["It feels good to get that off my chest."], //Vengeful Spirit
 		["The pain. The pain!"], //Venomancer
 		["Holy shit, it's me."], //Viper
-		["Herp derp Dirge."], //Visage
+		["Herp derp."], //Visage
 		["It seems you don't understand."], //Void Spirit
 		["Just for that, I'm unfiending you."], //Warlock
 		["Tichedricheaph."], //Weaver
