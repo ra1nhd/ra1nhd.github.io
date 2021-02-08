@@ -30,7 +30,7 @@ var heroNames = [
 		["brewmaster", "brew", "panda"],
 		["bristleback", "bristle", "bb"],
 		["broodmother", "brood", "spider"],
-		["centaur", "centaurwarrunner", "cent", "bradwarden"],
+		["centaur_warrunner", "centaurwarrunner", "centaur", "cent", "bradwarden"],
 		["chaos_knight", "chaosknight", "ck", "chaos", "nessaj"],
 		["chen"],
 		["clinkz", "bone", "bonefletcher", "brooklynkurtz"],
@@ -93,7 +93,7 @@ var heroNames = [
 		["puck", "faeriedragon"],
 		["pudge", "pudka", "butcher"],
 		["pugna", "pug"],
-		["queenofpain", "qop", "akasha"],
+		["queen_of_pain", "queenofpain", "qop", "akasha"],
 		["razor"],
 		["riki", "rikimaru", "sa"],
 		["rubick", "rub", "grandmagus"],
@@ -118,13 +118,13 @@ var heroNames = [
 		["timbersaw", "shredder", "timber", "rizzrak"],
 		["tinker", "boush", "tink"],
 		["tiny", "tony", "tuny"],
-		["treant", "tree", "treantprotector", "tp", "rooftrellen"],
+		["treant_protector", "treantprotector", "tree", "treant", "tp", "rooftrellen"],
 		["troll_warlord", "trollwarlord", "troll"],
 		["tusk", "tuskarr", "tuskar", "walrus"],
 		["underlord", "pitlord", "abyssalunderlord"],
 		["undying", "undy", "dirge", "ud"],
 		["ursa", "fuzzywuzzy"],
-		["vengefulspirit", "venge", "vs"],
+		["vengeful_spirit", "vengefulspirit", "venge", "vs"],
 		["venomancer", "veno", "lesale"],
 		["viper", "netherdrake"],
 		["visage"],
@@ -1012,20 +1012,20 @@ var bonusQuotes = [
 		["DEATH IS MY BITCH."], //Wraith King
 		["You can't run from heaven!"] //Zeus
 		];
-			
+
 var otherNames = [
 		["sadness", "sadeness", "iadmit", "iadmitnothingbutmysadness"],
 		["bock", "bockbockbock"],
 		["waow", "wow"],
 		["gg", "Это ГГ"],
-		["nextlevel", "next", "nextlevelplay", "thenextlevelplay"],
+		["next_level", "nextlevel", "next", "nextlevelplay", "thenextlevelplay"],
 		["lakad", "lakadmatatag", "normalin", "normalinnormalin"],
 		["woo", "comingthrough"],
-		["holymoly", "holy"],
+		["holy_moly", "holymoly", "holy"],
 		["questionable"],
 		["baby", "candy", "candyfromababy"]
 		];
-			
+
 var otherQuotes = [
 		["I... I admit nothing but my sadness that you\'re gone."], //Sadness
 		["BOCK BOCK BOCK! That is what you sound like!"], //BOCK BOCK BOCK
