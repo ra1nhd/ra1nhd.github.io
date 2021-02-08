@@ -993,7 +993,7 @@ var bonusQuotes = [
 		["I don't need therapy!"], //Timbersaw
 		["Well. I think it's rather stimulating, don't you?"], //Tinker
 		["I am Tiny."], //Tiny
-		["Trees are not so good with motion, you know"], //Treant Protector
+		["Trees are not so good with motion, you know."], //Treant Protector
 		["We only lost because my whole team are noobs!"], //Troll Warlord
 		["Well there's your problem."], //Tusk
 		["You have my permission to die."], //Underlord
