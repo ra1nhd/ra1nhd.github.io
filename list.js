@@ -984,7 +984,7 @@ var bonusQuotes = [
 		["Professionals have standards."], //Sniper
 		["What did I do wrong?"], //Spectre
 		["All bullshit aside, this one's in the bag."], //Spirit Breaker
-		["I only want blue tangos in my dressing room!"], //Storm Spirit
+		["Now it's a party!"], //Storm Spirit
 		["Go sproink yourself!"], //Sven
 		["Hmm, yeah not sure how this works."], //Techies
 		["You can't touch me."], //Templar Assassin
@@ -993,12 +993,12 @@ var bonusQuotes = [
 		["I don't need therapy!"], //Timbersaw
 		["Well. I think it's rather stimulating, don't you?"], //Tinker
 		["I am Tiny."], //Tiny
-		["Trees are not so good with motion, you know."], //Treant Protector
+		["You may be the only one here who is slower than I."], //Treant Protector
 		["We only lost because my whole team are noobs!"], //Troll Warlord
 		["Well there's your problem."], //Tusk
 		["You have my permission to die."], //Underlord
 		["Really cool magnets!"], //Undying
-		["Your cubs are orphaned now."], //Ursa
+		["I prevent forest fires."], //Ursa
 		["It feels good to get that off my chest."], //Vengeful Spirit
 		["The pain. The pain!"], //Venomancer
 		["Holy shit, it's me."], //Viper
