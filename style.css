@@ -82,7 +82,7 @@ td:nth-child(3){
 	background-color: #3c4346;
 }
 
-#heroquotes tr:hover td:not(:first-child){
+tr:hover td:not(:first-child){
 	background-color: #3c4346;
 }
 
