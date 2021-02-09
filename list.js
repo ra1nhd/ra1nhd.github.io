@@ -1014,12 +1014,12 @@ var bonusQuotes = [
 		];
 
 var otherNames = [
-		["sadness", "sadeness", "iadmitnothingbutmysadness"],
+		["sadness", "sadeness"],
 		["bock", "bockbockbock"],
 		["waow", "wow"],
 		["gg", "Это ГГ"],
-		["next_level", "nextlevel", "next", "thenextlevelplay"],
-		["lakad", "lakadmatatag", "normalin", "normalinnormalin"],
+		["next_level", "nextlevel", "next"],
+		["lakad", "lakadmatatag", "normalin"],
 		["woo", "comingthrough"],
 		["holy_moly", "holymoly", "holy"],
 		["questionable"],
@@ -1052,7 +1052,7 @@ var table = document.createElement('table'),
 	td;
 	th = document.createElement('th'),
 	table.setAttribute("id", "otherquotes");
-	th.innerHTML= "Keywords";
+	th.innerHTML= "Chat Wheel Keywords";
 	thead.appendChild(th);
 	th = document.createElement('th');
 	th.innerHTML= "Quotes",
@@ -1089,7 +1089,7 @@ var table = document.createElement('table'),
 	//Search field
 	const searchDiv = document.createElement('div');
 	searchDiv.setAttribute("id", "searchDiv"),
-	searchDiv.innerHTML = `<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search through quotes...">`,
+	searchDiv.innerHTML = `<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search quotes...">`,
 	div.appendChild(searchDiv);
 	
 	//heroquotes table
@@ -1100,7 +1100,7 @@ var table = document.createElement('table'),
 	tr,
 	td;
 	th = document.createElement('th'),
-	th.innerHTML="Keywords";
+	th.innerHTML="Dota Plus Keywords";
 	table.setAttribute("id", "heroquotes");
 	thead.appendChild(th);
 	th = document.createElement('th');
