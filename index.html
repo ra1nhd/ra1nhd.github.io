@@ -5,54 +5,38 @@
 <link rel="shortcut icon" href="https://howdoiplay.com/assets/media/icons/favicon.ico">
 <title>Chat Wheel Lines</title>
 <link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="../assets/styles/minimap-icons.css"/>
+<link rel="stylesheet" href="https://howdoiplay.com/assets/styles/minimap-icons.css"/>
 <style>
-.wei .herolist__hero__link:before { background: url("../assets/media/heroes/minimap/icons/custom/The_Disciple's_Path_Anti-Mage_minimap_icon.png") no-repeat;   }
+.wei .herolist__hero__link:before { background: url("https://howdoiplay.com/assets/media/heroes/minimap/icons/custom/The_Disciple's_Path_Anti-Mage_minimap_icon.png") no-repeat;   }
 </style>
 </head>
 <body>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search through quotes... (janky)">
-<!--<input type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search for quotes..">-->
+<div class="Container" id="Header">
+		<div class="Inner">
+			<h1>Dota Plus Voice Lines</h1>
+			<h2><a href="https://twitch.tv/tsunami643">twitch.tv/tsunami643</a></h2>
+		</div>
+	</div>
 <script type="text/javascript" src="./list.js"></script>
 <script>
-    function myFunction() {
-        var input, filter, table, tr, td, i;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("heroquotes");
-        tr = table.getElementsByTagName("tr");
-		othertable = document.getElementById("otherquotes");
-        var show = true;
-        var spannedRows = 0;
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[2];
-            if(spannedRows > 0) {
-                if(show) {
-					otherquotes.style.display = "",
-                    tr[i].style.display = "";
-					}
-                else {
-				    otherquotes.style.display = "none",
-                    tr[i].style.display = "none";
-					}
-                spannedRows--;
-            } else if (td) {
-                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-				    otherquotes.style.display = "",
-                    tr[i].style.display = "";
-                } else {
-				    otherquotes.style.display = "none",
-                    tr[i].style.display = "none";
-                }
-                let rs = td.getAttribute("rowspan");
-                console.log("rs = " + rs);
-                if(rs && rs > 1) {
-                    show = td.innerHTML.toUpperCase().indexOf(filter) > -1;
-                    spannedRows = rs - 1;
-                }
-            }
-        }
-    }
+	function myFunction() {
+	  var input, filter, table, tr, td, i, txtValue;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("heroquotes");
+	  tr = table.getElementsByTagName("tr");
+	  for (i = 0; i < tr.length; i++) {
+		td = tr[i].getElementsByTagName("td")[1];
+		if (td) {
+		  txtValue = td.textContent || td.innerText;
+		  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			tr[i].style.display = "";
+		  } else {
+			tr[i].style.display = "none";
+		  }
+		}
+	  }
+	}
 </script>
 <script>
 function copyToClipboard(elementId) {
