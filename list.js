@@ -1089,7 +1089,7 @@ var table = document.createElement('table'),
 	//Search field
 	const searchDiv = document.createElement('div');
 	searchDiv.setAttribute("id", "searchDiv"),
-	searchDiv.innerHTML = `<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search quotes...">`,
+	searchDiv.innerHTML = `<input id="myInput" type="text" placeholder="Search quotes...">`,
 	div.appendChild(searchDiv);
 	
 	//heroquotes table

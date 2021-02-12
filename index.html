@@ -20,24 +20,22 @@
 	</div>
 <script type="text/javascript" src="./list.js"></script>
 <script>
-	function myFunction() {
-	  var input, filter, table, tr, td, i, txtValue;
-	  input = document.getElementById("myInput");
-	  filter = input.value.toUpperCase();
-	  table = document.getElementById("heroquotes");
-	  tr = table.getElementsByTagName("tr");
-	  for (i = 0; i < tr.length; i++) {
-		td = tr[i].getElementsByTagName("td")[1];
-		if (td) {
-		  txtValue = td.textContent || td.innerText;
-		  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-			tr[i].style.display = "";
-		  } else {
-			tr[i].style.display = "none";
-		  }
-		}
-	  }
+function filterTable(event) {
+    var filter = event.target.value.toUpperCase();
+    var rows = document.querySelector("#heroquotes").rows;
+    
+    for (var i = 0; i < rows.length; i++) {
+		var firstCol = rows[i].cells[0].textContent.toUpperCase();
+		var secondCol = rows[i].cells[1].textContent.toUpperCase();
+		if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
+			rows[i].style.display = "";
+		} else {
+			rows[i].style.display = "none";
+		}      
 	}
+}
+
+document.querySelector('#myInput').addEventListener('keyup', filterTable, false);
 </script>
 <script>
 function copyToClipboard(elementId) {
