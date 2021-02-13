@@ -1023,6 +1023,7 @@ var otherNames = [
 		["woo", "comingthrough"],
 		["holy_moly", "holymoly", "holy"],
 		["questionable"],
+		["no_chill", "nochill", "chill"],
 		["baby", "candy", "candyfromababy"]
 		];
 
@@ -1036,6 +1037,7 @@ var otherQuotes = [
 		["Coming through with the wooooo"], //Coming Through
 		["Holy Moly!"], //Holy Moly
 		["I... uh... That was questionable at the... at the best."], //Questionable
+		["This guy has no chill!"], //No Chill
 		["Like stealing candy from a baby... A no longer living baby."] //Candy
 		];
 
