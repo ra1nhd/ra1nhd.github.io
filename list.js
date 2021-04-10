@@ -38,6 +38,7 @@ var heroNames = [
 		["crystal_maiden", "crystalmaiden", "cm", "maiden", "rylai"],
 		["dark_seer", "darkseer", "seer", "ds"],
 		["dark_willow", "darkwillow", "willow", "dw", "mireska", "biggestoversight"],
+		["dawnbreaker", "valora", "dawn", "thighs", "db"],
 		["dazzle", "dazz", "shadowpriest"],
 		["death_prophet", "deathprophet", "dp", "krobe", "krobelus"],
 		["disruptor", "disraptor", "thrall"],
@@ -163,6 +164,7 @@ var masterQuotes = [
 		["Is it cold in here or is it just me?"], //Crystal Maiden
 		["We are not so different, my enemies and I. Except my brain is much larger."], //Dark Seer
 		["This makes absolutely no sense."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["That was almost a disaster."], //Dazzle
 		["I died a little just now."], //Death Prophet
 		["I call down the thunder."], //Disruptor
@@ -288,6 +290,7 @@ var platinumQuotes = [
 		["It just keeps getting better."], //Crystal Maiden
 		["You've hit a wall."], //Dark Seer
 		["I don't know what I was expecting."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["Tricked you."], //Dazzle
 		["It did not take a prophet to see that coming."], //Death Prophet
 		["Did I interrupt you?"], //Disruptor
@@ -413,6 +416,7 @@ var goldQuotes = [
 		["I didn't see that coming."], //Crystal Maiden
 		["Hoooahahaaaheeh."], //Dark Seer
 		["Never had a chance."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["Jzap!"], //Dazzle
 		["How disappointing."], //Death Prophet
 		["They're trying to kill me!"], //Disruptor
@@ -538,6 +542,7 @@ var silverQuotes = [
 		["Now nobody wins!"], //Crystal Maiden
 		["Your life, much like your head, lacked a point."], //Dark Seer
 		["No. Just... no."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["That's not right."], //Dazzle
 		["Poor dear."], //Death Prophet
 		["What weathermancery is this?"], //Disruptor
@@ -663,6 +668,7 @@ var bronzeQuotes = [
 		["Very cool of you!"], //Crystal Maiden
 		["Heheh yeheheh hey heehhhe yehhey yehe heheh eheh yeh."], //Dark Seer
 		["Just what I was waiting for."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["Oh, what a beauty!"], //Dazzle
 		["Oh ah ha ha ha ha ha ho ho haa! Ha ha ha ha ha ha!"], //Death Prophet
 		["Heheha."], //Disruptor
@@ -788,6 +794,7 @@ var grandmasterQuotes = [
 		["You only live ice!"], //Crystal Maiden
 		["You're no peer of the seer."], //Dark Seer
 		["Ugh, fine. I guess you're my little PogChamp. Come here."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["If killing you is wrong, I don't want to be right."], //Dazzle
 		["No no. Tsk tsk tsk."], //Death Prophet
 		["Feeling under the weather?"], //Disruptor
@@ -913,6 +920,7 @@ var bonusQuotes = [
 		["All the wards in the world didn't see that coming!"], //Crystal Maiden
 		["No, I will not calm my beard."], //Dark Seer
 		["We're gonna have some fuuuuunnnn."], //Dark Willow
+		["Working on it..."], //Dawnbreaker
 		["You're in the pink!"], //Dazzle
 		["Welcome, all my ladies, welcome! Come to me!"], //Death Prophet
 		["Wait, what? I'm dead?"], //Disruptor
