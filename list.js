@@ -134,7 +134,7 @@ var heroNames = [
 		["weaver"],
 		["windranger", "windrunner", "wr", "wind", "lyralei"],
 		["winter_wyvern", "winterwyvern", "wyvern", "ww"],
-		["witch_doctor", "witchdoctor", "wd"],
+		["witch_doctor", "witch", "witchdoctor", "wd"],
 		["wraith_king", "wraithking", "skeletonking", "wk", "wraith", "skele", "leoric"],
 		["zeus", "zuus"]
 		];
