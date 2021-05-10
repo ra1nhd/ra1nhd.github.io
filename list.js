@@ -38,7 +38,7 @@ var heroNames = [
 		["crystal_maiden", "crystalmaiden", "cm", "maiden", "rylai"],
 		["dark_seer", "darkseer", "seer", "ds"],
 		["dark_willow", "darkwillow", "willow", "dw", "mireska", "biggestoversight"],
-		["dawnbreaker", "valora", "dawn", "thighs", "db"],
+		["dawnbreaker", "valora", "dawn", "db", "hammermommy", "thighs"],
 		["dazzle", "dazz", "shadowpriest"],
 		["death_prophet", "deathprophet", "dp", "krobe", "krobelus"],
 		["disruptor", "disraptor", "thrall"],
