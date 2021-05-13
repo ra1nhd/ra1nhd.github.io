@@ -1,18 +1,3 @@
-var colorArray = [
-			'#3375FF', //blue
-			'#66FFBF', //teal
-			'#BF00BF', //purple
-			'#F3F00B', //yellow
-			'#FF6B00', //orange
-			'#FE86C2', //pink
-			//'#A1B447', //olive
-			'#65D9F7', //light blue
-			'#008321' //dark green
-			//'#A46900'  //brown
-			];
-			
-var hexColor = colorArray[Math.floor(Math.random() * colorArray.length)];
-
 var heroNames = [
 		["UNDEFINED"],
 		["abaddon", "abbadon", "aba", "abba"],
