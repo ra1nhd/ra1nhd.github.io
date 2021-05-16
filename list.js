@@ -32,7 +32,7 @@ var heroNames = [
 		["drow_ranger", "drowranger", "drow", "trax", "traxex"],
 		["earth_spirit", "earthspirit", "kaolin", "earth"],
 		["earthshaker", "shaker", "raigor", "es"],
-		["elder_titan", "eldertitan", "et"],
+		["elder_titan", "eldertitan", "et", "titan"],
 		["ember_spirit", "emberspirit", "ember", "xin"],
 		["enchantress", "ench", "bambi"],
 		["enigma"],
@@ -94,7 +94,7 @@ var heroNames = [
 		["snapfire", "snap", "granny"],
 		["sniper", "kardel"],
 		["spectre", "spec", "specter", "mercurial"],
-		["spirit_breaker", "spiritbreaker", "sb", "spiritbreaker"],
+		["spirit_breaker", "spiritbreaker", "sb", "spiritbreaker", "bara"],
 		["storm_spirit", "stormspirit", "raijin", "storm"],
 		["sven", "rogueknight"],
 		["techies", "goblintechies", "pieceofshit"],
@@ -999,7 +999,7 @@ var bonusQuotes = [
 		["It seems you don't understand."], //Void Spirit
 		["Just for that, I'm unfiending you."], //Warlock
 		["Tichedricheaph."], //Weaver
-		["Where the heck did that come from?"], //Windranger
+		["Hey, where'd I go?"], //Windranger
 		["I'm melting!"], //Winter Wyvern
 		["Roll out the barrel!"], //Witch Doctor
 		["DEATH IS MY BITCH."], //Wraith King
