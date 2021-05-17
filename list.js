@@ -1084,7 +1084,7 @@ var table = document.createElement('table'),
 	//Search field
 	const searchDiv = document.createElement('div');
 	searchDiv.setAttribute("id", "searchDiv"),
-	searchDiv.innerHTML = `<input id="myInput" type="text" placeholder="Search quotes...">`,
+	searchDiv.innerHTML = `<span class="fas fa-search" style="position: absolute;font-size: 33px;margin: 11 15;color: #faeac9;"></span><input id="myInput" type="text" placeholder="Search heroes or quotes...">`,
 	div.appendChild(searchDiv);
 	
 	//heroquotes table
